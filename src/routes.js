@@ -1,13 +1,25 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Route, NavLink } from 'react-router-dom';
+import { HashRouter, Route, NavLink } from 'react-router-dom';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
-import Navbar from './Components/Navbar/index.js';
+import Home from './Components/Pages/Home/index.js'
 
 export default function Routes() {
+    const [toggleMenu, setToggleMenu] = useState(false);
+
     return (
-        <BrowserRouter>
-            <Navbar/>
-        </BrowserRouter>
+        <HashRouter>
+            <div className='header'>
+                
+            </div>
+            <div>
+                <div className="header">
+                    
+                </div>
+                <div>
+                    <Route path="/" exact component={Home} />
+                </div>
+            </div>
+        </HashRouter>
     );
 }
