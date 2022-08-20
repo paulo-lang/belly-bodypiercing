@@ -2,22 +2,26 @@ import React, { useState } from 'react';
 import 'react-sticky-header/styles.css';
 import Navbar from '../../Components/Navbar';
 import Sidebar from '../../Components/Sidebar';
-import './styles.css'
+import Home from '../../Components/Home';
+import About from '../../Components/About';
 
-const Home = () => {
+const Spa = () => {
 
     const [isOpen, setIsOpen] = useState(false)
 
-const toggle = () => {
-    setIsOpen(!isOpen)
-}
+    const toggle = () => {
+        setIsOpen(!isOpen)
+    }
 
     return (
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle}/>       
+            <Navbar toggle={toggle}/>
+            <Home /> 
+            <About />
+
         </>
     );
 }
 
-export default Home;
+export default Spa;

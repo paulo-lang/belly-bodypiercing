@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Route, NavLink } from 'react-router-dom';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-
-import Navbar from './Components/Navbar/index.js';
-import Sidebar from './Components/Sidebar/index.js';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home/index.js';
 
 export default function Routes() {
     return (
         <BrowserRouter>
-            <Home/>
+            <Switch>
+                <Route path='/' component={Home} exact />
+            </Switch>
         </BrowserRouter>
     );
 }

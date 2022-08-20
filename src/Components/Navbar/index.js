@@ -9,22 +9,22 @@ const Navbar = ({ toggle }) => {
             <NavbarContainer>
               <NavMenu>
                 <NavItem>
-                  <NavLinks to="/">INICIO</NavLinks>
+                  <NavLinks to="Home">INÍCIO</NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to="/">SOBRE</NavLinks>
+                  <NavLinks to="About">SOBRE</NavLinks>
                 </NavItem>
               </NavMenu>
-              <NavLogo to='/'>Belly BodyPiercing</NavLogo>
+              <NavLogo to='/'>Belly</NavLogo>
               <MobileIcon onClick={toggle}>
                 <FaBars />
               </MobileIcon>
               <NavMenu>
-              <NavItem>
-                  <NavLinks to="/">NOVIDADES</NavLinks>
+                <NavItem>
+                  <NavLinks to="contact">CONTATO</NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to="/">CONTATO</NavLinks>
+                  <NavLinks to="schedule">AGENDAR</NavLinks>
                 </NavItem>
               </NavMenu>
 
