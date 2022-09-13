@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes as Switch } from 'react-router-dom';
 import Home from './pages/Home/index.js';
 
 export default function Routes() {
