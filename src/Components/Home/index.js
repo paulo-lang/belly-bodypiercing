@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'react-sticky-header/styles.css';
 import { HomeContainer, BgImg, BgWeb, ArrowContainer, BgImgContainer } from './HomeElements';
 import BackImg from '../../Images/backImage.jpg'
