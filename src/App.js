@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Routes from './routes';
+import RouteControl from './RouteControl';
 
 function App() {
   return (
-    <Routes />
+    <RouteControl />
   );
 }
 
